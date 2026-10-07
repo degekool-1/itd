@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدورات - ITD Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/course.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+</head>
+<body>
+    <!-- الهيدر -->
+    <header class="courses-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-content">
+                    <a href="index.html" class="logo">
+                        <div class="logo-img">
+                            <img src="../image/home/logo_main.png" alt="ITD Academy" onerror="this.style.display='none'">
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">ITD</span>
+                            <span class="logo-sub">Academy</span>
+                        </div>
+                    </a>
+                    
+                    <ul class="nav-links">
+                        <li><a href="../index.html">الرئيسية</a></li>
+                        <li><a href="../about/index.html">عن الأكاديمية</a></li>
+                        <li><a href="index.html" class="active">الدورات</a></li>
+                        <li><a href="../teachers/index.html">المدربين</a></li>
+                        <li><a href="../contact/index.html">اتصل بنا</a></li>
+                    </ul>
+
+                    <div class="nav-actions">
+                        <a href="https://api.whatsapp.com/send?phone=201080901957" class="btn btn-primary">
+                            <i class="fab fa-whatsapp"></i>
+                            انضم إلينا
+                        </a>
+                    </div>
+
+                    <button class="mobile-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- الهيرو سيكشن -->
+    <section class="courses-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">اكتشف عالم</span>
+                        <span class="title-line highlight">البرمجة والإبداع</span>
+                    </h1>
+                    <p class="hero-description">
+                        دوراتنا مصممة خصيصًا للأطفال واليافعين لتعلم البرمجة بطريقة ممتعة وتفاعلية. 
+                        ابدأ رحلتك في عالم التكنولوجيا من اليوم!
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">دورة متخصصة</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5000+</div>
+                            <div class="stat-label">طالب مسجل</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">رضا أولياء الأمور</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="hero-image-container">
+                        <img src="../image/about/courses-hero.jpeg" alt="تعلم البرمجة" class="hero-image">
+                        <div class="floating-elements">
+                            <div class="floating-element element-1">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="floating-element element-2">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div class="floating-element element-3">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم فئات الدورات -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">اختر <span class="highlight">مجالك</span> المفضل</h2>
+                <p class="section-subtitle">تصفح دوراتنا المصنفة حسب التخصصات</p>
+            </div>
+
+            <div class="categories-grid">
+                <div class="category-card" data-category="web">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="category-title">تطوير الويب</h3>
+                    <p class="category-desc">تعلم بناء مواقع وتطبيقات ويب تفاعلية</p>
+                    <div class="category-meta">
+                        <span class="courses-count">8 دورات</span>
+                        <span class="category-level">من 8 سنوات</span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="mobile">
+                    <div class="category-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="category-title">تطبيقات الجوال</h3>
+                    <p class="category-desc">اصنع تطبيقات للهواتف الذكية</p>
+                    <div class="category-meta">
+                        <span class="courses-count">6 دورات</span>
+                        <span class="category-level">من 10 سنوات</span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="games">
+                    <div class="category-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="category-title">تطوير الألعاب</h3>
+                    <p class="category-desc">اصنع ألعابك الخاصة من الصفر</p>
+                    <div class="category-meta">
+                        <span class="courses-count">5 دورات</span>
+                        <span class="category-level">من 6 سنوات</span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="ai">
+                    <div class="category-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="category-title">الذكاء الاصطناعي</h3>
+                    <p class="category-desc">تعلم أساسيات الذكاء الاصطناعي</p>
+                    <div class="category-meta">
+                        <span class="courses-count">4 دورات</span>
+                        <span class="category-level">من 12 سنة</span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="python">
+                    <div class="category-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="category-title">لغة Python</h3>
+                    <p class="category-desc">لغة البرمجة الأكثر شيوعًا</p>
+                    <div class="category-meta">
+                        <span class="courses-count">7 دورات</span>
+                        <span class="category-level">من 10 سنوات</span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="design">
+                    <div class="category-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="category-title">التصميم والإبداع</h3>
+                    <p class="category-desc">تصميم واجهات المستخدم</p>
+                    <div class="category-meta">
+                        <span class="courses-count">3 دورات</span>
+                        <span class="category-level">من 9 سنوات</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الدورات المميزة -->
+    <section class="featured-courses">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">الدورات <span class="highlight">المميزة</span></h2>
+                <p class="section-subtitle">اكتشف أفضل دوراتنا المصممة بعناية لتنمية مهارات طفلك</p>
+            </div>
+
+            <div class="courses-filter">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">جميع الدورات</button>
+                    <button class="filter-btn" data-filter="beginner">للمبتدئين</button>
+                    <button class="filter-btn" data-filter="intermediate">للمتوسطين</button>
+                    <button class="filter-btn" data-filter="advanced">للمتقدمين</button>
+                </div>
+            </div>
+
+            <div class="courses-grid">
+                <!-- دورة 1 -->
+                <div class="course-card" data-level="beginner" data-category="web">
+                    <div class="course-badge beginner">مبتدئ</div>
+                    <div class="course-image">
+                        <img src="../image/course/course-web.jpeg" alt="تطوير الويب للمبتدئين">
+                        <div class="course-overlay">
+                            <button class="preview-btn">
+                                <i class="fas fa-play"></i>
+                                معاينة مجانية
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="course-content">
+                        <div class="course-category">تطوير الويب</div>
+                        <h3 class="course-title">تطوير الويب للمبتدئين</h3>
+                        <p class="course-description">
+                            ابدأ رحلتك في عالم برمجة الويب بتعلم HTML, CSS, JavaScript 
+                            واصنع أول موقع ويب خاص بك خلال أسابيع قليلة.
+                        </p>
+                        
+                        <div class="course-features">
+                            <div class="feature">
+                                <i class="fas fa-clock"></i>
+                                <span>24 ساعة تدريب</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-video"></i>
+                                <span>12 فيديو تعليمي</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>5 مشاريع عملية</span>
+                            </div>
+                        </div>
+
+                        <div class="course-meta">
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">4.8 (127 تقييم)</span>
+                            </div>
+                            <div class="duration">
+                                <i class="fas fa-calendar"></i>
+                                <span>8 أسابيع</span>
+                            </div>
+                        </div>
+
+                        <div class="course-footer">
+                            <div class="price-section">
+                                <span class="current-price">١٢٠٠ ج.م</span>
+                                <span class="original-price">١٥٠٠ ج.م</span>
+                                <span class="discount">خصم 20%</span>
+                            </div>
+                            <button class="enroll-btn" data-course="web-development">
+                                <i class="fas fa-shopping-cart"></i>
+                                سجل الآن
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- دورة 2 -->
+                <div class="course-card" data-level="beginner" data-category="python">
+                    <div class="course-badge beginner">مبتدئ</div>
+                    <div class="course-image">
+                        <img src="../image/course/course-python.jpeg" alt="Python للأطفال">
+                        <div class="course-overlay">
+                            <button class="preview-btn">
+                                <i class="fas fa-play"></i>
+                                معاينة مجانية
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="course-content">
+                        <div class="course-category">لغة Python</div>
+                        <h3 class="course-title">Python للأطفال</h3>
+                        <p class="course-description">
+                            تعلم لغة Python من خلال الألعاب والمشاريع المسلية. 
+                            مثالي للأطفال من سن 10 سنوات لبدء رحلتهم في البرمجة.
+                        </p>
+                        
+                        <div class="course-features">
+                            <div class="feature">
+                                <i class="fas fa-clock"></i>
+                                <span>20 ساعة تدريب</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-video"></i>
+                                <span>15 فيديو تعليمي</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>8 مشاريع عملية</span>
+                            </div>
+                        </div>
+
+                        <div class="course-meta">
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">5.0 (89 تقييم)</span>
+                            </div>
+                            <div class="duration">
+                                <i class="fas fa-calendar"></i>
+                                <span>6 أسابيع</span>
+                            </div>
+                        </div>
+
+                        <div class="course-footer">
+                            <div class="price-section">
+                                <span class="current-price">١٠٠٠ ج.م</span>
+                                <span class="original-price">١٢٠٠ ج.م</span>
+                                <span class="discount">خصم 17%</span>
+                            </div>
+                            <button class="enroll-btn" data-course="python-kids">
+                                <i class="fas fa-shopping-cart"></i>
+                                سجل الآن
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- دورة 3 -->
+                <div class="course-card" data-level="beginner" data-category="games">
+                    <div class="course-badge beginner">مبتدئ</div>
+                    <div class="course-image">
+                        <img src="../image/course/course-games.jpeg" alt="تطوير الألعاب">
+                        <div class="course-overlay">
+                            <button class="preview-btn">
+                                <i class="fas fa-play"></i>
+                                معاينة مجانية
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="course-content">
+                        <div class="course-category">تطوير الألعاب</div>
+                        <h3 class="course-title">تطوير الألعاب بـ Scratch</h3>
+                        <p class="course-description">
+                            اصنع ألعابك الأولى باستخدام Scratch. 
+                            تعلم مفاهيم البرمجة بطريقة مرئية وممتعة تناسب الأطفال من سن 6 سنوات.
+                        </p>
+                        
+                        <div class="course-features">
+                            <div class="feature">
+                                <i class="fas fa-clock"></i>
+                                <span>16 ساعة تدريب</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-video"></i>
+                                <span>10 فيديو تعليمي</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>6 مشاريع عملية</span>
+                            </div>
+                        </div>
+
+                        <div class="course-meta">
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">4.7 (156 تقييم)</span>
+                            </div>
+                            <div class="duration">
+                                <i class="fas fa-calendar"></i>
+                                <span>5 أسابيع</span>
+                            </div>
+                        </div>
+
+                        <div class="course-footer">
+                            <div class="price-section">
+                                <span class="current-price">٨٠٠ ج.م</span>
+                                <span class="original-price">١٠٠٠ ج.م</span>
+                                <span class="discount">خصم 20%</span>
+                            </div>
+                            <button class="enroll-btn" data-course="scratch-games">
+                                <i class="fas fa-shopping-cart"></i>
+                                سجل الآن
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- دورة 4 -->
+                <div class="course-card" data-level="intermediate" data-category="mobile">
+                    <div class="course-badge intermediate">متوسط</div>
+                    <div class="course-image">
+                        <img src="../image/course/course-mobile.jpeg" alt="تطوير التطبيقات">
+                        <div class="course-overlay">
+                            <button class="preview-btn">
+                                <i class="fas fa-play"></i>
+                                معاينة مجانية
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="course-content">
+                        <div class="course-category">تطبيقات الجوال</div>
+                        <h3 class="course-title">تطوير تطبيقات Android</h3>
+                        <p class="course-description">
+                            تعلم بناء تطبيقات Android باستخدام MIT App Inventor. 
+                            اصنع تطبيقك الأول خلال أسبوع ونشره على متجر التطبيقات.
+                        </p>
+                        
+                        <div class="course-features">
+                            <div class="feature">
+                                <i class="fas fa-clock"></i>
+                                <span>18 ساعة تدريب</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-video"></i>
+                                <span>14 فيديو تعليمي</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>4 مشاريع عملية</span>
+                            </div>
+                        </div>
+
+                        <div class="course-meta">
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">4.9 (94 تقييم)</span>
+                            </div>
+                            <div class="duration">
+                                <i class="fas fa-calendar"></i>
+                                <span>7 أسابيع</span>
+                            </div>
+                        </div>
+
+                        <div class="course-footer">
+                            <div class="price-section">
+                                <span class="current-price">١٤٠٠ ج.م</span>
+                                <span class="original-price">١٨٠٠ ج.م</span>
+                                <span class="discount">خصم 22%</span>
+                            </div>
+                            <button class="enroll-btn" data-course="android-apps">
+                                <i class="fas fa-shopping-cart"></i>
+                                سجل الآن
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- دورة 5 -->
+                <div class="course-card" data-level="advanced" data-category="ai">
+                    <div class="course-badge advanced">متقدم</div>
+                    <div class="course-image">
+                        <img src="../image/course/course-ai.jpeg" alt="الذكاء الاصطناعي">
+                        <div class="course-overlay">
+                            <button class="preview-btn">
+                                <i class="fas fa-play"></i>
+                                معاينة مجانية
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="course-content">
+                        <div class="course-category">الذكاء الاصطناعي</div>
+                        <h3 class="course-title">مقدمة في الذكاء الاصطناعي</h3>
+                        <p class="course-description">
+                            اكتشف عالم الذكاء الاصطناعي وتعلم الآلة. 
+                            اصنع مشاريع ذكية باستخدام Python وتعلم كيفية عمل الخوارزميات.
+                        </p>
+                        
+                        <div class="course-features">
+                            <div class="feature">
+                                <i class="fas fa-clock"></i>
+                                <span>30 ساعة تدريب</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-video"></i>
+                                <span>20 فيديو تعليمي</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>6 مشاريع متقدمة</span>
+                            </div>
+                        </div>
+
+                        <div class="course-meta">
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">4.8 (67 تقييم)</span>
+                            </div>
+                            <div class="duration">
+                                <i class="fas fa-calendar"></i>
+                                <span>10 أسابيع</span>
+                            </div>
+                        </div>
+
+                        <div class="course-footer">
+                            <div class="price-section">
+                                <span class="current-price">٢٠٠٠ ج.م</span>
+                                <span class="original-price">٢٥٠٠ ج.م</span>
+                                <span class="discount">خصم 20%</span>
+                            </div>
+                            <button class="enroll-btn" data-course="ai-intro">
+                                <i class="fas fa-shopping-cart"></i>
+                                سجل الآن
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- دورة 6 -->
+                <div class="course-card" data-level="beginner" data-category="design">
+                    <div class="course-badge beginner">مبتدئ</div>
+                    <div class="course-image">
+                        <img src="../image/course/course-design.jpeg" alt="تصميم واجهات">
+                        <div class="course-overlay">
+                            <button class="preview-btn">
+                                <i class="fas fa-play"></i>
+                                معاينة مجانية
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="course-content">
+                        <div class="course-category">التصميم والإبداع</div>
+                        <h3 class="course-title">تصميم واجهات المستخدم</h3>
+                        <p class="course-description">
+                            تعلم أساسيات التصميم الجرافيكي وتصميم واجهات المستخدم 
+                            باستخدام أدوات بسيطة ومناسبة للأطفال من سن 9 سنوات.
+                        </p>
+                        
+                        <div class="course-features">
+                            <div class="feature">
+                                <i class="fas fa-clock"></i>
+                                <span>12 ساعة تدريب</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-video"></i>
+                                <span>8 فيديو تعليمي</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>3 مشاريع عملية</span>
+                            </div>
+                        </div>
+
+                        <div class="course-meta">
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">4.9 (78 تقييم)</span>
+                            </div>
+                            <div class="duration">
+                                <i class="fas fa-calendar"></i>
+                                <span>4 أسابيع</span>
+                            </div>
+                        </div>
+
+                        <div class="course-footer">
+                            <div class="price-section">
+                                <span class="current-price">٩٠٠ ج.م</span>
+                                <span class="original-price">١١٠٠ ج.م</span>
+                                <span class="discount">خصم 18%</span>
+                            </div>
+                            <button class="enroll-btn" data-course="ui-design">
+                                <i class="fas fa-shopping-cart"></i>
+                                سجل الآن
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="courses-cta">
+                <a href="#" class="btn btn-outline">
+                    <i class="fas fa-eye"></i>
+                    عرض جميع الدورات
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم مسار التعلم -->
+    <section class="learning-path">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">مسار <span class="highlight">التعلم</span></h2>
+                <p class="section-subtitle">اختر المسار المناسب لعمر طفلك ومستواه</p>
+            </div>
+
+            <div class="path-container">
+                <div class="path-step">
+                    <div class="step-header">
+                        <div class="step-number">1</div>
+                        <div class="step-info">
+                            <h3 class="step-title">المستوى التأسيسي</h3>
+                            <span class="step-age">من 6 إلى 9 سنوات</span>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <p class="step-description">
+                            ابدأ مع Scratch وBlockly لتعلم مفاهيم البرمجة الأساسية 
+                            من خلال الألعاب والقصص التفاعلية
+                        </p>
+                        <div class="step-courses">
+                            <span class="course-tag">Scratch للأطفال</span>
+                            <span class="course-tag">برمجة القصص</span>
+                            <span class="course-tag">ألعاب تعليمية</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="path-step">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <div class="step-info">
+                            <h3 class="step-title">المستوى المتوسط</h3>
+                            <span class="step-age">من 10 إلى 13 سنة</span>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <p class="step-description">
+                            تقدم إلى Python وتطوير الويب والتطبيقات البسيطة 
+                            مع مشاريع عملية تنمي مهارات التفكير المنطقي
+                        </p>
+                        <div class="step-courses">
+                            <span class="course-tag">Python للمبتدئين</span>
+                            <span class="course-tag">تطوير الويب</span>
+                            <span class="course-tag">تطبيقات الجوال</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="path-step">
+                    <div class="step-header">
+                        <div class="step-number">3</div>
+                        <div class="step-info">
+                            <h3 class="step-title">المستوى المتقدم</h3>
+                            <span class="step-age">من 14 إلى 18 سنة</span>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <p class="step-description">
+                            احترف تطوير الألعاب والذكاء الاصطناعي والمشاريع المتقدمة 
+                            استعدادًا للجامعة وسوق العمل
+                        </p>
+                        <div class="step-courses">
+                            <span class="course-tag">تطوير الألعاب</span>
+                            <span class="course-tag">الذكاء الاصطناعي</span>
+                            <span class="course-tag">مشاريع متقدمة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأسئلة الشائعة -->
+    <section class="courses-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">أسئلة <span class="highlight">شائعة</span></h2>
+                <p class="section-subtitle">إجابات على أكثر الأسئلة شيوعًا حول دوراتنا</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>ما هو العمر المناسب لبدء تعلم البرمجة؟</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>يمكن للأطفال البدء من سن 6 سنوات باستخدام أدوات بصرية مثل Scratch، مع إمكانية التدرج حسب العمر والقدرات. لدينا دورات مناسبة لكل فئة عمرية.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>كم مدة كل دورة؟</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>تتراوح مدة الدورات بين 12 إلى 30 ساعة تعليمية، موزعة على 4 إلى 10 أسابيع حسب مستوى الدورة وتعقيد المحتوى.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>هل أحتاج لخبرة سابقة في البرمجة؟</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>لا، جميع دوراتنا تبدأ من الصفر وتناسب المبتدئين تمامًا. نستخدم طرق تدريس بصرية وممتعة تناسب الأطفال.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>ما هي متطلبات النظام للحصص؟</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>جهاز كمبيوتر أو لاب توب مع اتصال إنترنت، ولا حاجة لمواصفات عالية. معظم الأدوات التي نستخدمها تعمل عبر المتصفح.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>هل تقدمون شهادات معتمدة؟</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نحن نقدم شهادات إتمام معتمدة من الأكاديمية لكل دورة، مع إمكانية توثيقها للجامعات والمؤسسات التعليمية.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>كيف يمكنني التسجيل في الدورة؟</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>يمكنك التسجيل مباشرة من خلال الموقع أو التواصل معنا عبر واتساب. فريق الدعم سيساعدك في اختيار الدورة المناسبة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الدعوة للعمل -->
+    <section class="courses-cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">جاهز لبدء رحلة التعلم؟</h2>
+                <p class="cta-description">اختر الدورة المناسبة وابدأ رحلتك في عالم البرمجة اليوم</p>
+                <div class="cta-actions">
+                    <a href="https://api.whatsapp.com/send?phone=201080901957" class="btn btn-primary btn-large">
+                        <i class="fab fa-whatsapp"></i>
+                        استشارة مجانية
+                    </a>
+                    <a href="https://www.youtube.com/@itdAcademmy" class="btn btn-secondary btn-large">
+                        <i class="fas fa-play-circle"></i>
+                        شاهد عينات مجانية
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer-sec">
+        <!-- نفس الفوتر السابق -->
+    </footer>
+
+    <!-- المودال -->
+    <div class="course-modal" id="courseModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <!-- سيتم ملؤه بالجافاسكريبت -->
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/course.js"></script>
+</body>
+</html>

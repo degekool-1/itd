@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المدربين - ITD Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/teachers.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- الهيدر -->
+    <header class="teachers-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-content">
+                    <a href="index.html" class="logo">
+                        <div class="logo-img">
+                            <img src="../image/home/logo_main.png" alt="ITD Academy" onerror="this.style.display='none'">
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">ITD</span>
+                            <span class="logo-sub">Academy</span>
+                        </div>
+                    </a>
+                    
+                    <ul class="nav-links">
+                        <li><a href="../index.html">الرئيسية</a></li>
+                        <li><a href="../about/index.html">عن الأكاديمية</a></li>
+                        <li><a href="../course/index.html">الدورات</a></li>
+                        <li><a href="index.html" class="active">المدربين</a></li>
+                        <li><a href="../contact/index.html">اتصل بنا</a></li>
+                    </ul>
+
+                    <div class="nav-actions">
+                        <a href="https://api.whatsapp.com/send?phone=201080901957" class="btn btn-primary">
+                            <i class="fab fa-whatsapp"></i>
+                            انضم إلينا
+                        </a>
+                    </div>
+
+                    <button class="mobile-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- الهيرو سيكشن -->
+    <section class="teachers-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">تعرف على</span>
+                        <span class="title-line highlight">مدربينا الخبراء</span>
+                    </h1>
+                    <p class="hero-description">
+                        فريقنا من المدربين المؤهلين يمتلكون سنوات من الخبرة في تعليم البرمجة للأطفال واليافعين. 
+                        نحن نؤمن بأن المدرب الجيد هو مفتاح نجاح رحلة التعلم.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">مدرب متخصص</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5000+</div>
+                            <div class="stat-label">طالب تدربوا معنا</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">رضا أولياء الأمور</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="hero-image-container">
+                        <img src="../image/home/teachers-hero.jpeg" alt="مدربينا الخبراء" class="hero-image">
+                        <div class="floating-elements">
+                            <div class="floating-element element-1">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="floating-element element-2">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="floating-element element-3">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم فريق المدربين -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">فريق <span class="highlight">المدربين</span></h2>
+                <p class="section-subtitle">تعرف على الخبراء الذين سيرافقون أطفالكم في رحلة التعلم</p>
+            </div>
+
+            <div class="team-filter">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">جميع المدربين</button>
+                    <button class="filter-btn" data-filter="programming">برمجة وتطوير</button>
+                    <button class="filter-btn" data-filter="design">تصميم وإبداع</button>
+                    <button class="filter-btn" data-filter="ai">ذكاء اصطناعي</button>
+                    <button class="filter-btn" data-filter="games">تطوير ألعاب</button>
+                </div>
+            </div>
+
+            <div class="team-grid">
+                <!-- مدرب 1 -->
+                <div class="teacher-card" data-specialty="programming,ai">
+                    <div class="teacher-image">
+                        <img src="../images/teachers/ahmed-mohamed.jpg" alt="أحمد محمد">
+                        <div class="teacher-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="teacher-content">
+                        <h3 class="teacher-name">أحمد محمد</h3>
+                        <span class="teacher-title">خبير تطوير الويب والذكاء الاصطناعي</span>
+                        
+                        <div class="teacher-stats">
+                            <div class="stat">
+                                <i class="fas fa-play-circle"></i>
+                                <span>15 دورة</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>1200+ طالب</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>4.9 تقييم</span>
+                            </div>
+                        </div>
+
+                        <p class="teacher-bio">
+                            مبرمج ومطور ويب بخبرة تزيد عن 8 سنوات. متخصص في تعليم الأطفال واليافعين 
+                            لغات البرمجة بطريقة مبسطة وممتعة. حاصل على شهادات في الذكاء الاصطناعي.
+                        </p>
+
+                        <div class="teacher-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">AI</span>
+                            <span class="skill-tag">Web Development</span>
+                        </div>
+
+                        <div class="teacher-actions">
+                            <button class="btn btn-outline view-profile" data-teacher="ahmed-mohamed">
+                                <i class="fas fa-user"></i>
+                                عرض الملف الشخصي
+                            </button>
+                            <button class="btn btn-primary view-courses" data-teacher="ahmed-mohamed">
+                                <i class="fas fa-play-circle"></i>
+                                دورات المدرب
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مدرب 2 -->
+                <div class="teacher-card" data-specialty="design,programming">
+                    <div class="teacher-image">
+                        <img src="../images/teachers/sara-ahmed.jpg" alt="سارة أحمد">
+                        <div class="teacher-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                                <a href="#"><i class="fab fa-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="teacher-content">
+                        <h3 class="teacher-name">سارة أحمد</h3>
+                        <span class="teacher-title">مصممة واجهات ومتخصصة في تعليم الأطفال</span>
+                        
+                        <div class="teacher-stats">
+                            <div class="stat">
+                                <i class="fas fa-play-circle"></i>
+                                <span>12 دورة</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>950+ طالب</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>5.0 تقييم</span>
+                            </div>
+                        </div>
+
+                        <p class="teacher-bio">
+                            مصممة جرافيك وواجهات مستخدم بخبرة 6 سنوات. متخصصة في تعليم التصميم 
+                            والإبداع للأطفال باستخدام أدوات بسيطة ومناسبة. شغوفة بتحويل الأفكار إلى تصاميم جميلة.
+                        </p>
+
+                        <div class="teacher-skills">
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">Graphic Design</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Creative Thinking</span>
+                        </div>
+
+                        <div class="teacher-actions">
+                            <button class="btn btn-outline view-profile" data-teacher="sara-ahmed">
+                                <i class="fas fa-user"></i>
+                                عرض الملف الشخصي
+                            </button>
+                            <button class="btn btn-primary view-courses" data-teacher="sara-ahmed">
+                                <i class="fas fa-play-circle"></i>
+                                دورات المدرب
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مدرب 3 -->
+                <div class="teacher-card" data-specialty="games,programming">
+                    <div class="teacher-image">
+                        <img src="../images/teachers/mohamed-ali.jpg" alt="محمد علي">
+                        <div class="teacher-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="teacher-content">
+                        <h3 class="teacher-name">محمد علي</h3>
+                        <span class="teacher-title">مطور ألعاب ومتخصص في برمجة الأطفال</span>
+                        
+                        <div class="teacher-stats">
+                            <div class="stat">
+                                <i class="fas fa-play-circle"></i>
+                                <span>10 دورات</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>800+ طالب</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>4.8 تقييم</span>
+                            </div>
+                        </div>
+
+                        <p class="teacher-bio">
+                            مطور ألعاب محترف بخبرة 7 سنوات. متخصص في تعليم الأطفال تطوير الألعاب 
+                            باستخدام Scratch وPython وUnity. يؤمن بأن الألعاب أفضل وسيلة لتعلم البرمجة.
+                        </p>
+
+                        <div class="teacher-skills">
+                            <span class="skill-tag">Game Development</span>
+                            <span class="skill-tag">Scratch</span>
+                            <span class="skill-tag">Unity</span>
+                            <span class="skill-tag">Python</span>
+                        </div>
+
+                        <div class="teacher-actions">
+                            <button class="btn btn-outline view-profile" data-teacher="mohamed-ali">
+                                <i class="fas fa-user"></i>
+                                عرض الملف الشخصي
+                            </button>
+                            <button class="btn btn-primary view-courses" data-teacher="mohamed-ali">
+                                <i class="fas fa-play-circle"></i>
+                                دورات المدرب
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مدرب 4 -->
+                <div class="teacher-card" data-specialty="ai,programming">
+                    <div class="teacher-image">
+                        <img src="../images/teachers/rana-hassan.jpg" alt="رنا حسن">
+                        <div class="teacher-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-kaggle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="teacher-content">
+                        <h3 class="teacher-name">رنا حسن</h3>
+                        <span class="teacher-title">باحثة في الذكاء الاصطناعي وتعليم الآلة</span>
+                        
+                        <div class="teacher-stats">
+                            <div class="stat">
+                                <i class="fas fa-play-circle"></i>
+                                <span>8 دورات</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>600+ طالب</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>4.9 تقييم</span>
+                            </div>
+                        </div>
+
+                        <p class="teacher-bio">
+                            باحثة في الذكاء الاصطناعي وتعلم الآلة. حاصلة على ماجستير في علوم الحاسب 
+                            ومتخصصة في تبسيط مفاهيم الذكاء الاصطناعي للأطفال واليافعين.
+                        </p>
+
+                        <div class="teacher-skills">
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">AI</span>
+                            <span class="skill-tag">Data Science</span>
+                            <span class="skill-tag">Python</span>
+                        </div>
+
+                        <div class="teacher-actions">
+                            <button class="btn btn-outline view-profile" data-teacher="rana-hassan">
+                                <i class="fas fa-user"></i>
+                                عرض الملف الشخصي
+                            </button>
+                            <button class="btn btn-primary view-courses" data-teacher="rana-hassan">
+                                <i class="fas fa-play-circle"></i>
+                                دورات المدرب
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مدرب 5 -->
+                <div class="teacher-card" data-specialty="programming,mobile">
+                    <div class="teacher-image">
+                        <img src="../images/teachers/omar-ibrahim.jpg" alt="عمر إبراهيم">
+                        <div class="teacher-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-medium"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="teacher-content">
+                        <h3 class="teacher-name">عمر إبراهيم</h3>
+                        <span class="teacher-title">مطور تطبيقات جوال ومتخصص في Android</span>
+                        
+                        <div class="teacher-stats">
+                            <div class="stat">
+                                <i class="fas fa-play-circle"></i>
+                                <span>9 دورات</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>700+ طالب</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>4.7 تقييم</span>
+                            </div>
+                        </div>
+
+                        <p class="teacher-bio">
+                            مطور تطبيقات جوال بخبرة 5 سنوات. متخصص في تعليم الأطفال تطوير التطبيقات 
+                            باستخدام MIT App Inventor وأدوات بسيطة تناسب المبتدئين.
+                        </p>
+
+                        <div class="teacher-skills">
+                            <span class="skill-tag">App Development</span>
+                            <span class="skill-tag">Android</span>
+                            <span class="skill-tag">MIT App Inventor</span>
+                            <span class="skill-tag">Kotlin</span>
+                        </div>
+
+                        <div class="teacher-actions">
+                            <button class="btn btn-outline view-profile" data-teacher="omar-ibrahim">
+                                <i class="fas fa-user"></i>
+                                عرض الملف الشخصي
+                            </button>
+                            <button class="btn btn-primary view-courses" data-teacher="omar-ibrahim">
+                                <i class="fas fa-play-circle"></i>
+                                دورات المدرب
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مدرب 6 -->
+                <div class="teacher-card" data-specialty="design,games">
+                    <div class="teacher-image">
+                        <img src="../images/teachers/laila-mahmoud.jpg" alt="ليلى محمود">
+                        <div class="teacher-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                                <a href="#"><i class="fab fa-artstation"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="teacher-content">
+                        <h3 class="teacher-name">ليلى محمود</h3>
+                        <span class="teacher-title">فنانة جرافيك ومصممة ألعاب</span>
+                        
+                        <div class="teacher-stats">
+                            <div class="stat">
+                                <i class="fas fa-play-circle"></i>
+                                <span>7 دورات</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>550+ طالب</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>4.9 تقييم</span>
+                            </div>
+                        </div>
+
+                        <p class="teacher-bio">
+                            فنانة جرافيك ومصممة ألعاب بخبرة 4 سنوات. متخصصة في تعليم الأطفال 
+                            تصميم الشخصيات والرسوم المتحركة باستخدام أدوات بسيطة ومناسبة.
+                        </p>
+
+                        <div class="teacher-skills">
+                            <span class="skill-tag">Character Design</span>
+                            <span class="skill-tag">Animation</span>
+                            <span class="skill-tag">Digital Art</span>
+                            <span class="skill-tag">Game Art</span>
+                        </div>
+
+                        <div class="teacher-actions">
+                            <button class="btn btn-outline view-profile" data-teacher="laila-mahmoud">
+                                <i class="fas fa-user"></i>
+                                عرض الملف الشخصي
+                            </button>
+                            <button class="btn btn-primary view-courses" data-teacher="laila-mahmoud">
+                                <i class="fas fa-play-circle"></i>
+                                دورات المدرب
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم منهجية التدريب -->
+    <section class="teaching-methodology">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">منهجية <span class="highlight">التدريب</span></h2>
+                <p class="section-subtitle">كيف نضمن أفضل تجربة تعلم لأطفالكم</p>
+            </div>
+
+            <div class="methodology-grid">
+                <div class="methodology-card">
+                    <div class="methodology-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="methodology-title">التعلم عبر الألعاب</h3>
+                    <p class="methodology-description">
+                        نستخدم الألعاب والتحديات التفاعلية لجعل عملية التعلم ممتعة وجذابة للأطفال
+                    </p>
+                </div>
+
+                <div class="methodology-card">
+                    <div class="methodology-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="methodology-title">متابعة فردية</h3>
+                    <p class="methodology-description">
+                        كل طالب يحصل على اهتمام فردي ومتابعة مستمرة لضمان تقدمه في التعلم
+                    </p>
+                </div>
+
+                <div class="methodology-card">
+                    <div class="methodology-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="methodology-title">مشاريع عملية</h3>
+                    <p class="methodology-description">
+                        نركز على المشاريع العملية التي تمكن الأطفال من تطبيق ما تعلموه بشكل مباشر
+                    </p>
+                </div>
+
+                <div class="methodology-card">
+                    <div class="methodology-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="methodology-title">مجتمع تعاوني</h3>
+                    <p class="methodology-description">
+                        نشجع العمل الجماعي وتبادل الأفكار بين الطلاب لبناء مجتمع تعلم إيجابي
+                    </p>
+                </div>
+
+                <div class="methodology-card">
+                    <div class="methodology-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="methodology-title">تقييم مستمر</h3>
+                    <p class="methodology-description">
+                        نقدم تقارير منتظمة عن تقدم الطلاب ونقاط القوة والجوانب التي تحتاج تحسين
+                    </p>
+                </div>
+
+                <div class="methodology-card">
+                    <div class="methodology-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="methodology-title">تحفيز دائم</h3>
+                    <p class="methodology-description">
+                        نظام المكافآت والشهادات يحفز الطلاب على الاستمرار وتحقيق إنجازات أكبر
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم آراء الطلاب -->
+    <section class="students-testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">آراء <span class="highlight">الطلاب</span></h2>
+                <p class="section-subtitle">ماذا يقول طلابنا عن مدربينا</p>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="testimonials-track">
+                    <!-- رأي 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "المدرب أحمد جعل البرمجة سهلة وممتعة! ابني كان ينتظر كل حصة بفارغ الصبر 
+                                والآن يستطيع صنع موقع ويب بسيط بمفرده."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>أم محمد</h4>
+                                    <span>والدة طالب 12 سنة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- رأي 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "سارة مدربة رائعة! ابنتي كانت خجولة ولكن الآن تشارك بفعالية وتصنع تصاميمها 
+                                الخاصة. شكرًا على الأسلوب الرائع في التعامل مع الأطفال."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>أبويوسف</h4>
+                                    <span>والد طالبة 10 سنوات</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- رأي 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "المدرب محمد حوّل حب ابني للألعاب إلى شغف لصنعها. الآن يصنع ألعابه 
+                                الخاصة ويتحدث عن البرمجة طوال الوقت. تغير إيجابي رائع!"
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>أم علي</h4>
+                                    <span>والدة طالب 9 سنوات</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- رأي 4 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "رنا استطاعت تبسيط الذكاء الاصطناعي لابنتي المراهقة. الآن تشارك في 
+                                مسابقات البرمجة وتفكر في دراسة علوم الحاسب في الجامعة."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>أم نور</h4>
+                                    <span>والدة طالبة 16 سنة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button class="slider-btn next-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأسئلة الشائعة -->
+    <section class="teachers-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">أسئلة <span class="highlight">شائعة</span></h2>
+                <p class="section-subtitle">إجابات على أسئلتكم حول المدربين والتدريب</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>ما هي مؤهلات المدربين؟</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>جميع مدربينا حاصلون على شهادات في تخصصاتهم ولديهم خبرة عملية لا تقل عن 3 سنوات في مجالهم، بالإضافة إلى خبرة في تعليم الأطفال واليافعين.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>كيف يتم اختيار المدربين؟</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>يمر المدربون باختبارات تقنية ومقابلات شخصية وورش عمل تدريبية للتأكد من مهاراتهم التقنية وقدرتهم على التعامل مع الأطفال وتعليمهم بشكل فعال.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>هل يمكنني تغيير المدرب إذا لم يناسب طفلي؟</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نقدم تجربة مجانية أولى وإمكانية تغيير المدرب إذا لم يكن هناك توافق، لأننا نؤمن بأهمية التوافق بين المدرب والطالب لتحقيق أفضل نتائج.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>ما هو عدد الطلاب في كل مجموعة؟</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نحافظ على مجموعات صغيرة (6-8 طلاب كحد أقصى) لضمان حصول كل طالب على الاهتمام الكافي والمتابعة الفردية من المدرب.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>هل المدربون متاحون للاستشارات خارج أوقات الحصص؟</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، المدربون متاحون عبر منصتنا للإجابة على أسئلة الطلاب وتقديم الدعم خارج أوقات الحصص الرسمية.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>كيف يتم تقييم أداء المدربين؟</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نطبق نظام تقييم شامل يشمل تقييمات الطلاب وأولياء الأمور، ومتابعة جودة المحتوى، وقياس تقدم الطلاب لضمان الحفاظ على أعلى معايير الجودة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الدعوة للعمل -->
+    <section class="teachers-cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">جاهز لبدء رحلة التعلم مع مدربينا؟</h2>
+                <p class="cta-description">اختر المدرب المناسب وابدأ رحلة طفلك في عالم البرمجة اليوم</p>
+                <div class="cta-actions">
+                    <a href="https://api.whatsapp.com/send?phone=201080901957" class="btn btn-primary btn-large">
+                        <i class="fab fa-whatsapp"></i>
+                        استشارة مجانية
+                    </a>
+                    <a href="../course/index.html" class="btn btn-secondary btn-large">
+                        <i class="fas fa-play-circle"></i>
+                        استعرض الدورات
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer-sec">
+        <!-- نفس الفوتر السابق -->
+    </footer>
+
+    <!-- مودال الملف الشخصي -->
+    <div class="teacher-modal" id="teacherModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <!-- سيتم ملؤه بالجافاسكريبت -->
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/teachers.js"></script>
+</body>
+</html>

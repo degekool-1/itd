@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ITD Academy — معتمدة من STEM.org</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #0f6b8a;
+      --primary-dark: #0b556f;
+      --primary-light: #eef8fb;
+      --accent: #ff6b35;
+      --text-dark: #0f172a;
+      --text-light: #6b7280;
+      --bg: #f6f8fa;
+      --card: #fff;
+      --success: #10b981;
+      --shadow: 0 10px 25px rgba(16, 24, 40, 0.1);
+      --radius: 14px;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Tajawal', 'Segoe UI', system-ui, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #f8fafc 0%, var(--bg) 100%);
+      color: var(--text-dark);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      border: 1px solid rgba(15, 23, 42, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(16, 24, 40, 0.15);
+    }
+    
+    header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 30px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    header::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 100%;
+      height: 200%;
+      background: rgba(255, 255, 255, 0.1);
+      transform: rotate(30deg);
+    }
+    
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 800;
+      font-size: 28px;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header-content {
+      position: relative;
+      z-index: 1;
+      flex: 1;
+    }
+    
+    h1 {
+      font-size: 28px;
+      margin: 0 0 8px;
+      font-weight: 800;
+    }
+    
+    .lead {
+      margin: 0;
+      opacity: 0.9;
+      font-size: 18px;
+    }
+    
+    .main {
+      display: grid;
+      grid-template-columns: 1fr 450px;
+      gap: 30px;
+      padding: 30px;
+    }
+    
+    @media (max-width: 900px) {
+      .main {
+        grid-template-columns: 1fr;
+      }
+      .aside {
+        order: 2;
+      }
+    }
+    
+    .content {
+      padding-right: 10px;
+    }
+    
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 50px;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 16px;
+      border: 1px solid rgba(15, 107, 138, 0.2);
+    }
+    
+    .title {
+      font-size: 24px;
+      margin: 10px 0 20px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--primary-dark);
+    }
+    
+    .text {
+      color: var(--text-light);
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin: 25px 0;
+    }
+    
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px;
+      background: var(--primary-light);
+      border-radius: 10px;
+      border-left: 4px solid var(--primary);
+    }
+    
+    .feature i {
+      color: var(--primary);
+      font-size: 18px;
+    }
+    
+    .cta-row {
+      margin-top: 30px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 24px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 16px;
+      border: 0;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(15, 107, 138, 0.3);
+    }
+    
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(15, 107, 138, 0.4);
+    }
+    
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+    
+    .btn-outline:hover {
+      background: var(--primary-light);
+      transform: translateY(-2px);
+    }
+    
+    .aside {
+      padding: 10px;
+    }
+    
+    .cert-wrap {
+      background: linear-gradient(135deg, #ffffff 0%, #f7fbfc 100%);
+      border-radius: 12px;
+      padding: 20px;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cert-wrap::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+    }
+    
+    .cert-img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    .cert-img:hover {
+      transform: scale(1.02);
+    }
+    
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(15, 23, 42, 0.08);
+    }
+    
+    .meta small {
+      color: var(--text-light);
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    
+    .meta i {
+      color: var(--primary);
+    }
+    
+    .footer {
+      padding: 20px 30px;
+      border-top: 1px solid rgba(15, 23, 42, 0.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--primary-light);
+    }
+    
+    .small {
+      font-size: 14px;
+      color: var(--text-light);
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 15px;
+    }
+    
+    .social-links a {
+      color: var(--text-light);
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    
+    .social-links a:hover {
+      color: var(--primary);
+    }
+    
+    /* Modal */
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(2, 6, 23, 0.8);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 1000;
+      backdrop-filter: blur(5px);
+    }
+    
+    .modal.open {
+      display: flex;
+      animation: fadeIn 0.3s ease;
+    }
+    
+    .modal-content {
+      position: relative;
+      max-width: 90%;
+      max-height: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .modal img {
+      max-width: 100%;
+      max-height: 80vh;
+      border-radius: 8px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    }
+    
+    .modal-close {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background 0.3s ease;
+    }
+    
+    .modal-close:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+    
+    .download-link {
+      margin-top: 15px;
+      color: white;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary);
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: background 0.3s ease;
+    }
+    
+    .download-link:hover {
+      background: var(--primary-dark);
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    /* Trust badges */
+    .trust-badges {
+      display: flex;
+      gap: 15px;
+      margin: 25px 0;
+      flex-wrap: wrap;
+    }
+    
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 15px;
+      background: #f8fafc;
+      border-radius: 8px;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      font-size: 14px;
+    }
+    
+    .trust-badge i {
+      color: var(--success);
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+      
+      header {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 20px;
+      }
+      
+      .logo {
+        width: 70px;
+        height: 70px;
+        font-size: 24px;
+      }
+      
+      h1 {
+        font-size: 24px;
+      }
+      
+      .lead {
+        font-size: 16px;
+      }
+      
+      .main {
+        padding: 20px;
+        gap: 20px;
+      }
+      
+      .title {
+        font-size: 22px;
+      }
+      
+      .btn {
+        padding: 12px 20px;
+        font-size: 15px;
+      }
+      
+      .footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+      
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .cta-row {
+        flex-direction: column;
+      }
+      
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
+      
+      .meta {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="logo">ITD</div>
+        <div class="header-content">
+          <h1>ITD Academy — معتمدة من STEM.org</h1>
+          <p class="lead">شهادة رسمية تعترف بتزامننا مع معايير الجودة العالمية في تعليم STEM</p>
+        </div>
+      </header>
+
+      <div class="main">
+        <div class="content">
+          <span class="badge">
+            <i class="fas fa-award"></i>
+            معتمدة من STEM.org
+          </span>
+          <h2 class="title">تمكين الجيل القادم من المبتكرين</h2>
+          <p class="text">أكاديمية ITD <strong>معتمدة رسمياً من STEM.org</strong>. هذا الاعتماد العالمي يُعترف بجهودنا في تقديم تعليم STEM قائم على الاستقصاء والتعلم العملي الذي يعزز الإبداع، التفكير النقدي، وحل المشكلات الواقعية. تم تصميم دوراتنا لإلهام الطلاب من عمر 6 إلى 18 سنة لاستكشاف التكنولوجيا، الهندسة، والبرمجة من خلال الدروس القائمة على المشاريع.</p>
+
+          <p class="text">انضم إلى المئات من العائلات التي تثق في أكاديمية ITD لإعداد أطفالهم لمستقبل قائم على التكنولوجيا. نقدم دروساً منظمة، مدربين ذوي خبرة، وبيئة تعلم داعمة تساعد كل طالب على النجاح.</p>
+          
+          <div class="trust-badges">
+            <div class="trust-badge">
+              <i class="fas fa-check-circle"></i>
+              <span>تعليم متميز منذ 2020</span>
+            </div>
+            <div class="trust-badge">
+              <i class="fas fa-check-circle"></i>
+              <span>+5000 طالب مسجل</span>
+            </div>
+            <div class="trust-badge">
+              <i class="fas fa-check-circle"></i>
+              <span>مدربون معتمدون</span>
+            </div>
+          </div>
+
+          <div class="features">
+            <div class="feature">
+              <i class="fas fa-laptop-code"></i>
+              <span>برمجة وتطوير</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-robot"></i>
+              <span>ذكاء اصطناعي</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-gamepad"></i>
+              <span>تطوير الألعاب</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-mobile-alt"></i>
+              <span>تطبيقات الجوال</span>
+            </div>
+          </div>
+
+          <div class="cta-row">
+            <a href="https://api.whatsapp.com/send?phone=201080901957" class="btn btn-primary">
+              <i class="fab fa-whatsapp"></i>
+              سجل الآن
+            </a>
+            <button class="btn btn-outline" id="viewCertBtn">
+              <i class="fas fa-expand"></i>
+              عرض الشهادة
+            </button>
+            <a href="../index.html" class="btn btn-outline">
+              <i class="fas fa-home"></i>
+              الصفحة الرئيسية
+            </a>
+          </div>
+        </div>
+
+        <aside class="aside">
+          <div class="cert-wrap">
+            <img src="image/home/certificate.jpg" alt="شهادة اعتماد STEM لأكاديمية ITD" class="cert-img" id="certImg">
+            <div class="meta">
+              <small><i class="far fa-calendar"></i> تاريخ الإصدار: 10 يناير 2025</small>
+              <small><i class="fas fa-hashtag"></i> رقم الشهادة: #188201905</small>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="footer">
+        <div class="small">ITD Academy — نلهم صنّاع المستقبل، المبرمجين والمبتكرين</div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal to preview certificate -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal">
+        <i class="fas fa-times"></i>
+      </button>
+      <img src="image/home/certificate.jpg" alt="معاينة شهادة الاعتماد">
+      <a href="image/home/certificate.jpg" download="ITD-Academy-STEM-Certificate.jpg" class="download-link">
+        <i class="fas fa-download"></i>
+        تحميل الشهادة
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById('modal');
+    const certImg = document.getElementById('certImg');
+    const viewBtn = document.getElementById('viewCertBtn');
+    const closeModal = document.getElementById('closeModal');
+    
+    // Open modal
+    certImg?.addEventListener('click', () => modal.classList.add('open'));
+    viewBtn?.addEventListener('click', () => modal.classList.add('open'));
+    
+    // Close modal
+    closeModal?.addEventListener('click', () => modal.classList.remove('open'));
+    modal?.addEventListener('click', (e) => { 
+      if (e.target === modal) modal.classList.remove('open') 
+    });
+    
+    // Close with Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') modal.classList.remove('open');
+    });
+  </script>
+</body>
+</html>
